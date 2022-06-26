@@ -6,9 +6,12 @@ html {
 }
 
 body {
-  background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-  background: -webkit-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-  background: #EFE6E6;
+  background: #ffb9b9;
+  background: -moz-linear-gradient(top, #ffb9b9 0%, #5f0202 100%);
+  background: -webkit-linear-gradient(top, #ffb9b9 0%, #5f0202 100%);
+  background: linear-gradient(to bottom, #ffb9b9 0%, #5f0202 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=0);
+
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=0);
 
   background-attachment:fixed;
