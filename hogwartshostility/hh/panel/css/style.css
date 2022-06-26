@@ -1,1 +1,13 @@
-# Empty CSS file for your own CSS
+
+html {
+    height: 100%;
+    width: 100%;  
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #ffb9b9 0%, #5f0202 100%);
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
