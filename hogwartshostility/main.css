@@ -5,10 +5,10 @@ html {
   }
   
   body {
-    background: #a7cfdf;
-    background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-    background: -webkit-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-    background: linear-gradient(to bottom, #a7cfdf 0%, #23538a 100%);
+    background: #ffb9b9;
+    background: -moz-linear-gradient(top, #ffb9b9 0%, #5f0202 100%);
+    background: -webkit-linear-gradient(top, #ffb9b9 0%, #5f0202 100%);
+    background: linear-gradient(to bottom, #ffb9b9 0%, #5f0202 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=0);
     padding: 25px;
     height: 100%;
@@ -18,10 +18,10 @@ html {
   
   .gameBoard .cardHolder>div,
   .gameBoard .LBG {
-    background: #cedbe9;
-    background: -moz-linear-gradient(top, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
-    background: -webkit-linear-gradient(top, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
-    background: linear-gradient(to bottom, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+    background: #e9cece;
+    background: -moz-linear-gradient(top, #e9cece 0%, #deaaaa 17%, #c76161 50%, #c33a3a 51%, #d64141 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+    background: -webkit-linear-gradient(top, #e9cece 0%, #deaaaa 17%, #c76161 50%, #c33a3a 51%, #d64141 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+    background: linear-gradient(to bottom, #e9cece 0%, #deaaaa 17%, #c76161 50%, #c33a3a 51%, #d64141 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b', GradientType=0);
   }
   
@@ -29,10 +29,10 @@ html {
   .gameBoard .score,
   .gameBoard .button,
   .gameBoard .DBG {
-    background: #7db9e8;
-    background: -moz-linear-gradient(top, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
-    background: -webkit-linear-gradient(top, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
-    background: linear-gradient(to bottom, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
+    background: #e87d7d;
+    background: -moz-linear-gradient(top, #e87d7d 0%, #ca2020 49%, #d82929 50%, #991e1e 100%);
+    background: -webkit-linear-gradient(top, #e87d7d 0%, #ca2020 49%, #d82929 50%, #991e1e 100%);
+    background: linear-gradient(to bottom, #e87d7d 0%, #ca2020 49%, #d82929 50%, #991e1e 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=0);
   }
   
@@ -41,7 +41,7 @@ html {
     font-family: helvetica, sans-serif;
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-    border: 5px solid #003c7b;
+    border: 5px solid #5f0202;
     text-align: center;
     padding: 150px;
     border-radius: 50%;
@@ -49,7 +49,7 @@ html {
     max-height: 800px;
     min-width: 305px;
     margin: auto;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/bgFF.svg') #0C4779;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/bgFF.svg') #790c0c;
     /*background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/bgFF.svg') #3a84c3;*/
     background-repeat: repeat;
     background-position: center center;
@@ -99,11 +99,11 @@ html {
     line-height: 100px;
     text-align: center;
     font-size: 30px;
-    color: #003c7b;
+    color: #5f0202;
     text-shadow: initial;
     text-align: center;
     border: 1px solid black;
-    background: #deeeff;
+    background: #ffdede;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid black;
@@ -146,7 +146,7 @@ html {
     right: 0;
     width: 45px;
     text-align: center;
-    border-left: 2px solid #003c7b;
+    border-left: 2px solid #5f0202;
   }
   .gameBoard .cardHolder span {
     margin: 10px;
@@ -160,7 +160,7 @@ html {
     width: 100%;
     line-height: 100%;
     height: 100%;
-    border: 2px solid #003c7b;
+    border: 2px solid #5f0202;
     line-height: 50px;
   }
   .gameBoard .cardHolder .back {
@@ -191,7 +191,7 @@ html {
     bottom: 0;
     display: block;
     margin: auto;
-    border: 2px solid #003c7b;
+    border: 2px solid #5f0202;
   }
   
   .gameBoard .btnHolder{
