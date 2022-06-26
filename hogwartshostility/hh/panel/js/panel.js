@@ -7,31 +7,32 @@ var missPointTeam2 = 0;
 	function start_game(){	
 		play_sound('ff_open');
 		document.getElementById("buttonStart").disabled = true;
+		game.app.init();
 			
-		var counter = 33;
-		var interval = setInterval(function() {
-			counter--;
-			if (counter < 5) {
-				game.document.getElementById("counter").innerHTML = counter;
-				game.document.getElementById("welcomePageInfo").style.display = "none";	
-			}
-			if (counter < 0) {
-				clearInterval(interval);
-				game.document.getElementById("idcLogo").style.width = '15%';
-				game.document.getElementById("counter").innerHTML = "BaÅŸlayalÄ±m";
-				game.document.getElementById("counter").style.display = "none";	
-				game.document.body.setAttribute("style", "background: linear-gradient(to bottom, #a7cfdf -50%, #580e12 100%);");
-				game.app.init();
+		// var counter = 33;
+		// var interval = setInterval(function() {
+		// 	counter--;
+		// 	if (counter < 5) {
+		// 		game.document.getElementById("counter").innerHTML = counter;
+		// 		game.document.getElementById("welcomePageInfo").style.display = "none";	
+		// 	}
+		// 	if (counter < 0) {
+		// 		clearInterval(interval);
+		// 		game.document.getElementById("idcLogo").style.width = '15%';
+		// 		game.document.getElementById("counter").innerHTML = "Counter";
+		// 		game.document.getElementById("counter").style.display = "none";	
+		// 		game.document.body.setAttribute("style", "background: linear-gradient(to bottom, #a7cfdf -50%, #580e12 100%);");
+		// 		game.app.init();
 				
-			}
-		}, 1000);	
+		// 	}
+		// }, 1000);	
 		
 		
 	}
 	
 	function finish_game(){
 		game.document.getElementById("idcLogo").style.width = '50%';
-		game.document.getElementById("welcomePageInfo").innerHTML = "Teşekkürler.";
+		game.document.getElementById("welcomePageInfo").innerHTML = "Thank you.";
 		game.document.getElementById("welcomePageInfo").style.display = "";
 	}
 	
