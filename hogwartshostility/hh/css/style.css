@@ -6,11 +6,8 @@ html {
 }
 
 body {
-  background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-  background: -webkit-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-  background: #EFE6E6;
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=0);
-
+  
+  background: linear-gradient(to bottom, #5f0202 0%, #d48585 100%);
   background-attachment:fixed;
 height:100%;
 overflow: auto;
