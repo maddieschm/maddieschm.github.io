@@ -1,0 +1,54 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body
+{
+    font-family: 'arial';
+    background-image: linear-gradient(to bottom right, #1A472A, #0E1A40);
+
+}
+
+h1 { 
+    font-size: 5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #9b850b;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+h2 {
+    font-size: 4em;
+    font-family: 'Permanent Marker';
+    color: #FFDB00;
+    background-color: black;
+    width:50%;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    background-color: #740001; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 8px;
+}
