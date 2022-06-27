@@ -5,29 +5,8 @@ var missPointTeam1 = 0;
 var missPointTeam2 = 0;
 
 	function start_game(){	
-		play_sound('ff_open');
 		document.getElementById("buttonStart").disabled = true;
-		game.app.init();
-			
-		// var counter = 33;
-		// var interval = setInterval(function() {
-		// 	counter--;
-		// 	if (counter < 5) {
-		// 		game.document.getElementById("counter").innerHTML = counter;
-		// 		game.document.getElementById("welcomePageInfo").style.display = "none";	
-		// 	}
-		// 	if (counter < 0) {
-		// 		clearInterval(interval);
-		// 		game.document.getElementById("idcLogo").style.width = '15%';
-		// 		game.document.getElementById("counter").innerHTML = "Counter";
-		// 		game.document.getElementById("counter").style.display = "none";	
-		// 		game.document.body.setAttribute("style", "background: linear-gradient(to bottom, #a7cfdf -50%, #580e12 100%);");
-		// 		game.app.init();
-				
-		// 	}
-		// }, 1000);	
-		
-		
+		game.app.init();		
 	}
 	
 	function finish_game(){
@@ -58,18 +37,6 @@ var missPointTeam2 = 0;
 	
 	function game_window_closed() {
 		game = null;
-	}
-	
-	// play sound object
-	var audio = new Audio('');
-	function play_sound(sound) {
-		var audio = new Audio('sfx/'+sound);
-		audio.play();
-	}
-	
-	function pause_sound() {
-		var audio = new Audio('');
-		audio.play();
 	}
 	
 	function printMissPoint(){
@@ -105,7 +72,6 @@ var missPointTeam2 = 0;
 			document.getElementById("misspoint2").innerHTML = missPointTeam2;
 		}	
 		printMissPoint();
-		play_sound('ff-strike');
 	}
 	
 	function nextQuestion(){
@@ -127,7 +93,6 @@ var missPointTeam2 = 0;
 			game.document.getElementById("awardTeam2").click();
 		}
 		
-	play_sound('ff_dogru');
 	}
 	
 	function GetQuestion(questionParam){
@@ -151,7 +116,6 @@ var missPointTeam2 = 0;
 				var tempBgColor = this.style.backgroundColor;
 				if(tempBgColor == ""){
 					this.setAttribute("style", "background-color: lightgreen;");
-					play_sound('ff-clang');
 				}
 				else if(tempBgColor == "lightgreen"){
 					this.setAttribute("style", "background-color: ;");
