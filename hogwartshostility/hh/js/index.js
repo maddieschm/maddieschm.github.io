@@ -211,19 +211,7 @@ var app = {
 	}
 
 	function winner(){
-		var winner;
-		var team1Score = document.getElementById("team1").innerHTML;
-		var team2Score = document.getElementById("team2").innerHTML;
-		
-		if(team1Score>team2Score){
-			winner = "The winner is: " + team1 + "!";
-		}
-		else if(team1Score<team2Score){
-			winner = "The winner is:  " + team2 + "!";
-		}
-		else{
-			winner = "The winner of this perfect race is both teams!";
-		}
+		var winner = "Congratulations!";
 		return winner;
 	}
 //app.init()
