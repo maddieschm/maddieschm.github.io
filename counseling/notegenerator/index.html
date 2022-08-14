@@ -12,14 +12,14 @@
             <form onsubmit="return handleData()" target="result2" action="index.js">
                 <p>Session location:</p>
                 <div>
-                <input type="checkbox" name="location" id="location_in person" value="in person" checked> <label for="location_in person">in person</label>
+                <input type="checkbox" name="location" id="location_in person" value="in person" > <label for="location_in person">in person</label>
                 </div>
                 <div>
                 <input type="checkbox" name="location" id="location_via telehealth" value="via telehealth"> <label for="location_via telehealth">via telehealth</label>
                 </div>
                 <p>Client's diagnosis:</p>
                 <div>
-                <input type="checkbox" name="diagnosis" id="diagnosis_Unspecified Anxiety Disorder" value="Unspecified Anxiety Disorder" checked> <label for="diagnosis_Unspecified Anxiety Disorder">Unspecified Anxiety Disorder</label>
+                <input type="checkbox" name="diagnosis" id="diagnosis_Unspecified Anxiety Disorder" value="Unspecified Anxiety Disorder" > <label for="diagnosis_Unspecified Anxiety Disorder">Unspecified Anxiety Disorder</label>
                 </div>
                 <div>
                 <input type="checkbox" name="diagnosis" id="diagnosis_Unspecified Depressive Disorder" value="Unspecified Depressive Disorder"> <label for="diagnosis_Unspecified Depressive Disorder">Unspecified Depressive Disorder</label>
@@ -27,15 +27,21 @@
                 <div>
                 <input type="checkbox" name="diagnosis" id="diagnosis_Adjustment Disorder" value="Adjustment Disorder"> <label for="diagnosis_Adjustment Disorder">Adjustment Disorder</label>
                 </div>
+                <div>
+                <input type="checkbox" name="diagnosis" id="diagnosis_Posttraumatic Stress Disorder" value="Posttraumatic Stress Disorder"> <label for="diagnosis_Posttraumatic Stress Disorder">Posttraumatic Stress Disorder</label>
+                </div>
                 <p>Clinical theory used:</p>
                 <div>
-                <input type="checkbox" name="theory" id="theory_resiliency-centered counseilng" value="resiliency-centered counseilng" checked> <label for="theory_resiliency-centered counseilng">resiliency-centered counseilng</label>
+                <input type="checkbox" name="theory" id="theory_trauma-informed" value="trauma-informed" > <label for="theory_trauma-informed">trauma-informed</label>
+                </div>                
+                <div>
+                <input type="checkbox" name="theory" id="theory_resiliency-centered counseilng" value="resiliency-centered counseilng" > <label for="theory_resiliency-centered counseilng">resiliency-centered counseilng</label>
                 </div>
                 <div>
                 <input type="checkbox" name="theory" id="theory_drama therapy" value="drama therapy"> <label for="theory_drama therapy">drama therapy</label>
                 </div>
                 <div>
-                <input type="checkbox" name="theory" id="theory_play therapy" value="play therapy" checked> <label for="theory_play therapy">play therapy</label>
+                <input type="checkbox" name="theory" id="theory_play therapy" value="play therapy" > <label for="theory_play therapy">play therapy</label>
                 </div>
                 <div>
                 <input type="checkbox" name="theory" id="theory_cognitive behavioral therapy" value="cognitive behavioral therapy"> <label for="theory_cognitive behavioral therapy">cognitive behavioral therapy</label>
@@ -44,17 +50,14 @@
                 <input type="checkbox" name="theory" id="theory_cognitive behavioral therapy" value="cognitive behavioral therapy"> <label for="theory_cognitive behavioral therapy">cognitive behavioral therapy</label>
                 </div>
                 <div>
-                <input type="checkbox" name="theory" id="theory_dialectical behavioral therapy" value="dialectical behavioral therapy" checked> <label for="theory_dialectical behavioral therapy">dialectical behavioral therapy</label>
+                <input type="checkbox" name="theory" id="theory_dialectical behavioral therapy" value="dialectical behavioral therapy" > <label for="theory_dialectical behavioral therapy">dialectical behavioral therapy</label>
                 </div>
                 <div>
-                <input type="checkbox" name="theory" id="theory_person-centered therapy" value="person-centered therapy" checked> <label for="theory_person-centered therapy">person-centered therapy</label>
-                </div>
-                <div>
-                <input type="checkbox" name="theory" id="theory_trauma-informed" value="trauma-informed" checked> <label for="theory_trauma-informed">trauma-informed</label>
+                <input type="checkbox" name="theory" id="theory_person-centered therapy" value="person-centered therapy" > <label for="theory_person-centered therapy">person-centered therapy</label>
                 </div>
                 <p>Session summary:</p>
                 <div>
-                <input type="text" name="summary" id="note" value="note" checked>
+                <input type="text" name="summary" id="note" value="The client " >
                 </div>
             <div>
             <input type="submit" name="submit" value="Submit"/>
