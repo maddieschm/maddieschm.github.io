@@ -7,21 +7,9 @@
 <body>
     <div align="center">
         <h1 style="color:#3a24ca"><p>Counseling Session Notes Generator</p></h1>
-    <form action="//www.html.am/html-codes/forms/html-form-tag-action.cfm" target="result2" method="get">
-        <h3>Checkboxes</h3>
-        <p>What would you like for lunch?</p>
-        <input type="checkbox" name="fruit" value="apple"> Apple
-        <input type="checkbox" name="fruit" value="orange"> Orange 
-        <input type="checkbox" name="fruit" value="banana"> Banana 
-        <h3>Radio Buttons</h3>
-        <p>What is your gender?</p>
-        <input type="radio" name="gender" value="male"> Male
-        <input type="radio" name="gender" value="female"> Female
-        <input type="radio" name="gender" value="unknown"> Unknown
-        <p><input type="submit" value="Submit"></p>
-        </form>
+    <!-- <form action="//www.html.am/html-codes/forms/html-form-tag-action.cfm" target="result2" method="get"> -->
         <div class="p-2">
-            <form onsubmit="return handleData()" method="post" action="https://postman-echo.com/post">
+            <form onsubmit="return handleData()" method="post" target="result2" action="index.js">
             <p>What would you like for lunch?</p>
             <div>
             <input type="checkbox" name="fruit" id="fruit_Apple" value="Apple" checked> <label for="fruit_Apple">Apple</label>
