@@ -5,11 +5,43 @@
     <link rel="stylesheet" href="main.css" type="text/css" />
 </head>
 <body>
+    <script> 
+        function handleData()
+{
+    var location = "";
+    var theory = "";
+    var summary = "";
+    var diagnosis = "";
+    var form_data = new FormData(document.querySelector("form"));
+    console.log("form data: ");
+    for(var pair of form_data.entries()) 
+    {
+        console.log(pair[0]+ ' : '+ pair[1]);
+        var id = pair[0];
+        switch(id) {
+            case 'location':
+                location = pair[1];
+            case 'theory':
+                theory = pair[1];
+            case 'diagnosis':
+                diagnosis = pair[1];
+            case 'summary':
+                summary = pair[1];
+        }
+    }
+    var sentence1 = "The clinician met with the client " + location + " to treat their diagnosis of " + diagnosis + ".";
+    var sentence2 = "The clinician utilized " + theory + " to support the client in building their skills.";
+    var sentence3 = summary;
+    var note = sentence1 + " " + sentence2 + " " + sentence3;
+    console.log(note);
+    return note;
+}
+    </script>
     <div align="center">
         <h1 style="color:#3a24ca"><p>Counseling Session Notes Generator</p></h1>
     <!-- <form action="//www.html.am/html-codes/forms/html-form-tag-action.cfm" target="result2" method="get"> -->
         <div class="p-2">
-            <form target="result2" action="index.js">
+            <form onsubmit="return handleData()" target="result2">
                 <p>Session location:</p>
                 <div>
                 <input type="checkbox" name="location" id="location_in person" value="in person" > <label for="location_in person">in person</label>
@@ -66,5 +98,4 @@
             </div>
         <h3>Note:</h3>
         <iframe name="result2" style="height:200px;width:500px;"></iframe>
-        <script src='index.js'></script>
 </body>
