@@ -7,41 +7,43 @@
 <body>
     <script> 
         function handleData()
-{
-    var location = "";
-    var theory = "";
-    var summary = "";
-    var diagnosis = "";
-    var form_data = new FormData(document.querySelector("form"));
-    console.log("form data: ");
-    for(var pair of form_data.entries()) 
-    {
-        console.log(pair[0]+ ' : '+ pair[1]);
-        var id = pair[0];
-        switch(id) {
-            case 'location':
-                location = pair[1];
-            case 'theory':
-                theory = pair[1];
-            case 'diagnosis':
-                diagnosis = pair[1];
-            case 'summary':
-                summary = pair[1];
-        }
-    }
-    var sentence1 = "The clinician met with the client " + location + " to treat their diagnosis of " + diagnosis + ".";
-    var sentence2 = "The clinician utilized " + theory + " to support the client in building their skills.";
-    var sentence3 = summary;
-    var note = sentence1 + " " + sentence2 + " " + sentence3;
-    console.log(note);
-    return note;
-}
+            {
+                var location = "";
+                var theory = "";
+                var summary = "";
+                var diagnosis = "";
+                var form_data = new FormData(document.querySelector("form"));
+                console.log("form data: ");
+                for(var pair of form_data.entries()) 
+                {
+                    console.log(pair[0]+ ' : '+ pair[1]);
+                    var id = pair[0];
+                    switch(id) {
+                        case 'location':
+                            location = pair[1];
+                        case 'theory':
+                            theory = pair[1];
+                        case 'diagnosis':
+                            diagnosis = pair[1];
+                        case 'summary':
+                            summary = pair[1];
+                    }
+                }
+                var sentence1 = "The clinician met with the client " + location + " to treat their diagnosis of " + diagnosis + ".";
+                var sentence2 = "The clinician utilized " + theory + " to support the client in building their skills.";
+                var sentence3 = summary;
+                var note = sentence1 + " " + sentence2 + " " + sentence3;
+                console.log(note);
+
+                var win = window.open("", "Note", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200");
+                win.document.body.innerHTML = "<link rel=\"stylesheet\" href=\"main.css\" type=\"text/css\" />\n" + note;
+            }
     </script>
     <div align="center">
         <h1 style="color:#3a24ca"><p>Counseling Session Notes Generator</p></h1>
     <!-- <form action="//www.html.am/html-codes/forms/html-form-tag-action.cfm" target="result2" method="get"> -->
         <div class="p-2">
-            <form onsubmit="return handleData()" target="result2">
+            <form onsubmit="return handleData()">
                 <p>Session location:</p>
                 <div>
                 <input type="checkbox" name="location" id="location_in person" value="in person" > <label for="location_in person">in person</label>
