@@ -24,7 +24,7 @@ function handleData()
     var sentence1 = "The clinician met with the client " + location + " to treat their diagnosis of " + diagnosis + ".";
     var sentence2 = "The clinician utilized " + theory + " to support the client in building their skills.";
     var sentence3 = summary;
-    var note = sentence1 + "\n" + sentence2 + "\n" + sentence3;
+    var note = sentence1 + " " + sentence2 + " " + sentence3;
     console.log(note);
     return note;
 }
