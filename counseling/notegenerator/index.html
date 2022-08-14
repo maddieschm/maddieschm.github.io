@@ -20,6 +20,24 @@
         <input type="radio" name="gender" value="unknown"> Unknown
         <p><input type="submit" value="Submit"></p>
         </form>
+        <div class="p-2">
+            <form onsubmit="return handleData()" method="post" action="https://postman-echo.com/post">
+            <p>What would you like for lunch?</p>
+            <div>
+            <input type="checkbox" name="fruit" id="fruit_Apple" value="Apple" checked> <label for="fruit_Apple">Apple</label>
+            </div>
+            <div>
+            <input type="checkbox" name="fruit" id="fruit_Orange" value="Orange"> <label for="fruit_Orange">Orange</label>
+            </div>
+            <div>
+            <input type="checkbox" name="fruit" id="fruit_Banana" value="Banana"> <label for="fruit_Banana">Banana</label>
+            </div>
+            <div>
+            <input type="submit" name="submit" value="Submit"/>
+            </div>
+            </form>
+            </div>
         <h3>Result:</h3>
         <iframe name="result2" style="height:100px;width:200px;"></iframe>
+    <script src='index.js'></script>
 </body>
