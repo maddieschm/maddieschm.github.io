@@ -42,7 +42,7 @@
                     var sentence2 = "The clinician utilized " + theory[0] + " " + theory[1] + " to support the client in building their skills."
                                 }
                 var sentence3 = summary;
-                var note = sentence1 + " " + sentence2 + " " + sentence3 + " The session took place date at time for 55 minutes. - MNS";
+                var note = sentence1 + " " + sentence2 + " " + sentence3;
                 var win = window.open("", "Note", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=900,height=300");
                 win.document.body.innerHTML = note;
             }
@@ -105,7 +105,7 @@
                 </div>
                 <p>Session summary:</p>
                 <div>
-                <input type="text" name="summary" id="note" value="The client " >
+                <input type="text" name="summary" id="note" value="The client . The session took place date at time for 55 minutes. - MNS" >
                 </div>
             <div>
             <input type="submit" name="submit" value="Submit"/>
