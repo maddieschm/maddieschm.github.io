@@ -23,8 +23,8 @@ function handleData()
     }
     var sentence1 = "The clinician met with the client " + location + " to treat their diagnosis of " + diagnosis + ".";
     var sentence2 = "The clinician utilized " + theory + " to support the client in building their skills.";
-    var sentence3 = summary + " The session took place date at time for 55 minutes. - MNS";
-    var note = sentence1 + " " + sentence2 + " " + sentence3;
+    var sentence3 = summary;
+    var note = sentence1 + " " + sentence2 + " " + sentence3 + " The session took place date at time for 55 minutes. - MNS";
     console.log(note);
     return note;
 }
