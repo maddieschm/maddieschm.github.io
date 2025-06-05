@@ -1,8 +1,3 @@
-/* Generated on: Sun Aug 07 2022 23:02:55 GMT+0000 (Coordinated Universal Time) */
-/* ==========================================================================
-   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
-   ========================================================================== */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -124,7 +119,8 @@ select {
 button,
 html input[type="button"],
 input[type="reset"] {
-  -webkit-appearance: button;
+  -webkit-appearance: button; 
+  appearance: button;         
   cursor: pointer;
 }
 button[disabled],
@@ -150,6 +146,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="search"] {
   -webkit-appearance: none;
+  appearance: none;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -192,7 +189,7 @@ th {
 [class^="w-icon-"],
 [class*=" w-icon-"] {
   font-family: "webflow-icons" !important;
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -278,8 +275,13 @@ html.w-mod-touch * {
   cursor: pointer;
   border-radius: 0;
 }
-input.w-button {
+button,
+html input[type="button"],
+input[type="reset"] {
   -webkit-appearance: button;
+  appearance: button; /* Add this line */
+  cursor: pointer;
+  /* border: 0; */
 }
 html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
@@ -338,8 +340,7 @@ html[data-w-dynpage] [data-w-cloak] {
   text-transform: inherit;
   list-style-type: disc;
   text-shadow: none;
-  font-smoothing: auto;
-  vertical-align: baseline;
+  font-smooth: auto;
   cursor: inherit;
   white-space: inherit;
   word-break: normal;
@@ -479,11 +480,12 @@ fieldset {
   border: 0;
 }
 button,
-[type="button"],
-[type="reset"] {
-  border: 0;
+html input[type="button"], 
+input[type="reset"] {
+  -webkit-appearance: button; 
+  appearance: button;         
   cursor: pointer;
-  -webkit-appearance: button;
+  border: 0; 
 }
 .w-form {
   margin: 0 0 15px;
@@ -515,8 +517,7 @@ label {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  vertical-align: middle;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   border: 1px solid #cccccc;
 }
 .w-input:-moz-placeholder,
@@ -1126,7 +1127,7 @@ textarea.w-select {
   background: #dddddd;
   clear: both;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 .w-slider-mask {
   position: relative;
@@ -1159,7 +1160,7 @@ textarea.w-select {
   height: 40px;
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 .w-slider-nav.w-round > div {
   border-radius: 100%;
@@ -1217,7 +1218,7 @@ textarea.w-select {
   color: white;
   font-size: 40px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1370,8 +1371,10 @@ textarea.w-select {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none; /* ADD THIS LINE */
   -webkit-tap-highlight-color: transparent;
   -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .w-lightbox-backdrop,
 .w-lightbox-container {
@@ -1493,6 +1496,7 @@ textarea.w-select {
   box-sizing: content-box;
   cursor: pointer;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); /* Added standard transform property */
 }
 .w-lightbox-active {
   opacity: 0.3;
@@ -1808,7 +1812,7 @@ textarea.w-select {
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2500,6 +2504,72 @@ p {
 
 .heading-3 {
   color: #e2a62b;
+}
+.resource-main-category {
+  color: #ffffff; /* White text for dark background */
+  font-size: 22px; /* Example size, adjust as needed */
+  font-weight: 700; /* Bold to make it stand out */
+  text-transform: uppercase;
+  letter-spacing: 5px; /* Consistent with some of your existing heading styles */
+  margin-top: 40px;   /* Space above each main category */
+  margin-bottom: 25px; /* Space below the main category title */
+  padding-bottom: 10px; /* Space before the border */
+  border-bottom: 1px solid #e4b962; /* Accent line, using your existing accent color */
+}
+
+.resource-sub-category {
+  color: #f0f0f0; /* Slightly off-white for readability */
+  font-size: 18px; /* Slightly smaller than main category */
+  font-weight: 600; /* Semi-bold */
+  letter-spacing: 2px; /* Less spacing than main category */
+  margin-top: 30px;   /* Space above each sub-category */
+  margin-bottom: 20px; /* Space below the sub-category title */
+}
+
+.resource-section { /* Wrapper for a main category and its contents */
+  margin-bottom: 40px; /* Overall spacing for a major resource section */
+}
+
+.resource-subsection { /* Wrapper for a sub-category and its items */
+  margin-bottom: 30px; /* Spacing for a group of related resources */
+  padding-left: 10px;  /* Optional: slight indent for visual hierarchy if desired */
+}
+
+.resource-item {
+  margin-bottom: 25px; /* Space between individual resource items */
+}
+
+.resource-item h5 { /* Titles of individual resources */
+  color: #ffffff;    /* White text */
+  font-size: 16px;   /* Clear and readable */
+  font-weight: 700;  /* Make resource titles stand out */
+  margin-bottom: 8px;/* Space between title and description */
+}
+
+.resource-item h6 { /* For any sub-bullets or minor headings within a resource item if needed */
+  color: #dddddd;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.resource-item .paragraph { /* For descriptions of resources */
+  color: #cccccc;      /* Lighter grey for less emphasis than titles */
+  font-size: 14px;      /* Consistent with your existing paragraph styles */
+  line-height: 22px;    /* Good readability */
+  margin-bottom: 10px; /* Space before the link */
+}
+
+.resource-item .footer-link { /* Styling for the actual links to resources */
+  display: inline-block; /* Allows for better spacing control */
+  font-weight: bold;    /* Make the link text a bit more prominent */
+  color: #e4b962;       /* Using your existing footer link color for consistency */
+  text-decoration: none; /* Usually good for a cleaner look */
+}
+
+.resource-item .footer-link:hover {
+  color: #2e9dff;       /* Consistent hover color from your navigation links */
+  text-decoration: underline; /* Optional: add underline on hover for clearer affordance */
 }
 
 @media screen and (max-width: 991px) {
