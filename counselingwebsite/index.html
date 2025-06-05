@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html data-wf-domain="madeline-schmitt-counseling-drama-thera.webflow.io" data-wf-page="62ea00a21bd1f55eaf7732cd" data-wf-site="62ea00a21bd1f518c07732c9" data-wf-status="1" class="w-mod-js w-mod-ix wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n8-active wf-opensans-n3-active wf-opensans-n7-active wf-ubuntu-n4-active wf-ubuntu-n5-active wf-roboto-n4-active wf-ubuntu-i5-active wf-ubuntu-n3-active wf-roboto-n5-active wf-roboto-n3-active wf-ubuntu-i7-active wf-opensans-i8-active wf-opensans-i4-active wf-opensans-i6-active wf-opensans-i7-active wf-opensans-i3-active wf-ubuntu-i4-active wf-ubuntu-n7-active wf-ubuntu-i3-active wf-active">
-
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
-        .wf-force-outline-none[tabindex="-1"]:focus {
-            outline: none;
-        }
-    </style>
     <title>Madeline Schmitt Counseling &amp; Drama Therapy PLLC</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Webflow" name="generator" />
-    <link href="madeline-schmitt-counseling-drama-thera.webflow.449b9303a.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css" media="all" />
+    <link href="counselingsite.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
         WebFont.load({
             google: {
@@ -20,207 +12,386 @@
             }
         });
     </script>
-    <script type="text/javascript">
-        ! (function(o, c) {
-            var n = c.documentElement,
-                t = " w-mod-";
-            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-        })(window, document);
-    </script>
     <link href="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/apple-touch-icon.png" rel="apple-touch-icon" />
     <style>
-        /* Add your site's custom CSS here or ensure it's linked correctly */
-        /* Styles for navigation (conceptual) */
+        body {
+            background-color: #000000;
+            color: #e2a62b;
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size:16px;
+            line-height: 1.5;
+        }
+        .custom-container {
+            width: 90%;
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 0;
+        }
         .custom-nav {
-            background-color: #333; /* Example background */
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        .custom-nav .brand {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e4b962;
+            text-decoration: none;
+            margin-right: 30px;
         }
         .custom-nav a {
-            color: white;
+            color: #e4b962;
             margin: 0 15px;
             text-decoration: none;
-            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
         }
-        .custom-nav a:hover {
-            color: #e4b962; /* Accent color from your design */
+        .custom-nav a:hover, .custom-nav a.current {
+            color: #2e9dff;
+        }
+        .hero-section-custom {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url("./Madeline Schmitt Counseling & Drama Therapy PLLC_files/62ea0754156de89484b0f45f_13177605_1915218822037832_4391287976983418624_n - Copy (2).jpg");
+            background-size: cover;
+            background-position: center center;
+            min-height: 300px;
+        }
+        .hero-section-custom .hero-heading-custom {
+            color: #000;
+            font-size: 60px;
+            line-height: 1.1;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .hero-section-custom .hero-heading-custom .text-span-custom {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            font-size: 67%;
+            line-height: 1;
+            letter-spacing: 4px;
+        }
+        .section-custom {
+            padding: 40px 0;
+            text-align:center;
+        }
+        .section-custom.accent-bg {
+            background-color: #000;
+            color: #e2a62b;
+        }
+        .section-title-group-custom {
+            margin-bottom: 40px;
+       }
+        .section-heading-custom {
+            font-size: 30px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-align:center;
+            margin-bottom: 16px;
+            color: #e8e8e8;
+        }
+        .section-subheading-custom {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-align:center;
+            color: #e8e8e8;
+            padding: 10px 0;
+            border: 1px solid #e2a62b;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-subheading-custom.off-white-text {
+             color: #e8e8e8;
+             border: 1px solid #e2a62b;
+        }
+        .custom-grid-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        .custom-grid-col-half {
+            width: 50%;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 767px) {
+            .custom-grid-col-half {
+                width: 100%;
+            }
+        }
+        .heading-custom {
+            color: #e2a62b;
+            font-size: 24px;
+            text-align: left;
+            margin-bottom:10px;
+            font-weight: 700;
+        }
+        .paragraph-custom {
+            color: #e2a62b;
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .paragraph-2-custom {
+            margin-top: 10px;
+            color: #e2a62b;
+            font-size: 20px;
+        }
+         .paragraph-3-custom {
+            color: #e2a62b;
+            font-size: 20px;
+        }
+        .image-custom {
+            max-width: 100%;
+            height: auto;
+            display:block;
+            margin: 20px auto;
+        }
+        .text-block-custom {
+            color: #e2a62b;
+            line-height: 1.8;
+        }
+        .button-custom {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e2a62b;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align:center;
+            margin-top: 20px;
+        }
+        .button-custom:hover {
+            background-color: #2e9dff;
+            color: #fff;
+        }
+        .footer-custom {
+            padding: 35px 0;
+            text-align:center;
+        }
+        .footer-custom.center-bg {
+            background-color: #000;
+        }
+        .footer-grid-row {
+            display:flex;
+            justify-content: space-around;
+            flex-wrap:wrap;
+        }
+        .footer-grid-col {
+            flex:1;
+            min-width: 200px;
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+        .footer-heading-custom {
+            color: #e2a62b;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .footer-link-custom {
+            display: block;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #d5d5e0;
+            color: #e2a62b;
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+        .footer-link-custom:hover {
+            color: rgba(0, 140, 255, 0.84);
+        }
+        .footer-link-wrapper-custom {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .info-icon-custom {
+            margin-right: 10px;
+        }
+        .footer-link-custom.with-icon-custom {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .footer-text-custom {
+            margin-top: 20px;
+            color: #e2a62b;
+            font-size: 14px;
+            text-align: center;
         }
     </style>
 </head>
-
-<body class="body">
-
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="w-nav">
-        <div class="w-container">
-            <a href="index.html" aria-current="page" class="w-nav-brand w--current"><div>Madeline Schmitt, PLLC</div></a>
-            <nav role="navigation" class="w-nav-menu">
-                <a href="index.html" class="w-nav-link">Home</a>
-                <a href="resources.html" class="w-nav-link">Resources</a>
-                </nav>
-            <div class="w-nav-button">
-                <div class="w-icon-nav-menu"></div>
-            </div>
+<body class="custom-body-styles">
+    <header class="custom-nav">
+        <div class="custom-container">
+            <a href="index.html" class="brand current">Madeline Schmitt, PLLC</a>
+            <a href="index.html" class="current">Home</a>
+            <a href="resources.html">Resources</a>
         </div>
-    </div>
-    <div class="section-2 wf-section"></div>
-    <div class="section-3 wf-section"></div>
-    <div class="hero-section centered wf-section"> [cite: 426]
-        <h1 data-ix="fade-in-bottom-page-loads" class="hero-heading"> [cite: 426]
-            <span class="text-span">
-                Madeline Schmitt <br /> Counseling &amp; Drama Therapy [cite: 427]
+    </header>
+    <div class="hero-section-custom">
+        <h1 class="hero-heading-custom">
+            <span class="text-span-custom">
+                Madeline Schmitt <br /> Counseling &amp; Drama Therapy
             </span>
         </h1>
     </div>
-
-    <div class="section wf-section"> [cite: 427]
-        <div class="w-container"> [cite: 427]
-            <div class="section-title-group"> [cite: 427]
-                <h2 class="section-heading centered">welcome</h2> [cite: 427]
-                <div class="section-subheading center">
-                    below includes information about me, My services,<br />
-                    &amp; my Counseling approach [cite: 428]
+    <div class="section-custom">
+        <div class="custom-container">
+            <div class="section-title-group-custom">
+                <h2 class="section-heading-custom">Welcome</h2>
+                <div class="section-subheading-custom">
+                    Below includes information about me, My services,<br />
+                    &amp; my Counseling approach
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="section accent wf-section"> [cite: 428]
-        <div class="w-container"> [cite: 428]
-            <div class="section-title-group"> [cite: 428]
-                <h2 class="section-heading centered white">About madeline</h2> [cite: 428]
-                <div class="section-subheading center off-white">education &amp; Professional experience</div> [cite: 429]
+    <div class="section-custom accent-bg">
+        <div class="custom-container">
+            <div class="section-title-group-custom">
+                <h2 class="section-heading-custom">About Madeline</h2>
+                <div class="section-subheading-custom off-white-text">Education &amp; Professional Experience</div>
             </div>
-            <div class="w-row"> [cite: 429]
-                <div class="w-col w-col-6"> [cite: 429]
-                    <h1 class="heading">Education Experience</h1> [cite: 429]
-                    <p class="paragraph">
+            <div class="custom-grid-row">
+                <div class="custom-grid-col-half">
+                    <h3 class="heading-custom">Education Experience</h3>
+                    <p class="paragraph-custom">
                         I earned my Master's in Counseling in Clinical Mental Health Counseling with
-                        Drama Therapy from Antioch University in Seattle, WA in Fall 2021. [cite: 429] My master's project
+                        Drama Therapy from Antioch University in Seattle, WA in Fall 2021. My master's project
                         included developing a Harry Potter version of
-                        D&amp;D called Muggles &amp; Magic for therapy purposes which I have
-                        done with various youth populations. [cite: 430] I earned my Bachelor of Science in Psychology and my
+                        D&amp;D called Muggles &amp; Magic for therapy purposes which I have done
+                        with various youth populations. I earned my Bachelor of Science in Psychology and my
                         Bachelor of Fine Arts in Theatre from the University
-                        of South Dakota in Vermillion, South Dakota in Spring 2018. [cite: 432]
+                        of South Dakota in Vermillion, South Dakota in Spring 2018.
                     </p>
-                    <h1 class="heading">Professional Experience</h1> [cite: 432]
-                    <p class="paragraph">
+                    <h3 class="heading-custom">Professional Experience</h3>
+                    <p class="paragraph-custom">
                         My counseling background involves wraparound intensive services (WISE)
                         counseling, child and family counseling for anyone in the family system, school-based services,
                         group social skill building, and group
-                        Dungeons &amp; Dragons therapy. [cite: 433] My experience has equipped me to work
+                        Dungeons &amp; Dragons therapy. My experience has equipped me to work
                         with clients experiencing a wide range of issues including depression, suicidal ideation, autism,
                         anxiety, and attention deficit hyperactivity
-                        disorder.<br /> [cite: 433]
+                        disorder.
                     </p>
                 </div>
-                <div class="w-col w-col-6"> [cite: 433]
-                    <img src="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/62f030c6043a364cf4036e1c_Professional Photo (2).jpg" loading="lazy" sizes="(max-width: 767px) 91vw, (max-width: 991px) 46vw, 460px" srcset="
-                        https://uploads-ssl.webflow.com/62ea00a21bd1f518c07732c9/62f030c6043a364cf4036e1c_Professional%20Photo%20(2)-p-500.jpg 500w,
-                        https://uploads-ssl.webflow.com/62ea00a21bd1f518c07732c9/62f030c6043a364cf4036e1c_Professional%20Photo%20(2)-p-800.jpg 800w,
-                        https://uploads-ssl.webflow.com/62ea00a21bd1f518c07732c9/62f030c6043a364cf4036e1c_Professional%20Photo%20(2)-p-1080.jpg 1080w" alt="" class="image" /> [cite: 433]
+                <div class="custom-grid-col-half">
+                    <img src="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/62f030c6043a364cf4036e1c_Professional Photo (2).jpg"
+                         loading="lazy"
+                         alt="Professional photo of Madeline Schmitt"
+                         class="image-custom" />
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="section accent wf-section"> [cite: 439]
-        <div class="w-container"> [cite: 439]
-            <div class="section-title-group"> [cite: 439]
-                <h2 class="section-heading centered white">services</h2>
-                <div class="section-subheading center off-white">Individual counseling</div>
+    <div class="section-custom accent-bg">
+        <div class="custom-container">
+            <div class="section-title-group-custom">
+                <h2 class="section-heading-custom">Services</h2>
+                <div class="section-subheading-custom off-white-text">Individual Counseling</div>
             </div>
-            <p class="paragraph-2">
+            <p class="paragraph-2-custom">
                 I'm a mental health counselor who believes in getting to know you and your
-                interests first, then the healing can begin. [cite: 434] I provide counseling services to teens and adults via
+                interests first, then the healing can begin. I provide counseling services to teens and adults via
                 telehealth or in person from the Elliot Bay
-                office in Seattle, WA. [cite: 435] I believe that being fun and interest-oriented is going to help
+                office in Seattle, WA. I believe that being fun and interest-oriented is going to help
                 find where you are now, so we can build the future you want to achieve - people never fail, plans
-                fail, so let's make a new plan. [cite: 436] You
+                fail, so let's make a new plan. You
                 are the expert of your own life; I'm only here to help remember strengths that may
-                have been forgotten or build new supports if helpful. [cite: 437] &nbsp;I know finding someone to support
+                have been forgotten or build new supports if helpful. &nbsp;I know finding someone to support
                 you on your journey can be hard; I'm
-                honored to support you along your journey. [cite: 438]
-            </p> [cite: 439]
+                honored to support you along your journey.
+            </p>
         </div>
     </div>
-
-    <div class="section accent wf-section"> [cite: 439]
-        <div class="w-container"> [cite: 439]
-            <div class="section-title-group"> [cite: 439]
-                <h2 class="section-heading centered white">Counseling Approach</h2> [cite: 439]
-                <div class="section-subheading center off-white">information about how i approach working with clients</div> [cite: 439]
+    <div class="section-custom accent-bg">
+        <div class="custom-container">
+            <div class="section-title-group-custom">
+                <h2 class="section-heading-custom">Counseling Approach</h2>
+                <div class="section-subheading-custom off-white-text">Information about how I approach working with clients</div>
             </div>
-            <p class="paragraph-3">
+            <p class="paragraph-3-custom">
                 I have been trained in a variety of theoretical approaches and integrates these
-                approaches for best client fit. [cite: 439] I enjoy working from a trauma-informed geek therapy lens to gain
+                approaches for best client fit. I enjoy working from a trauma-informed geek therapy lens to gain
                 a holistic view, highlight strengths, and
-                build additional support. [cite: 440] I utilize resiliency-centered counseling, narrative therapy,
-                drama therapy and geek therapy. [cite: 441]
-            </p> [cite: 442]
+                build additional support. I utilize resiliency-centered counseling, narrative therapy,
+                drama therapy and geek therapy.
+            </p>
         </div>
     </div>
-
-    <div class="section accent wf-section"> [cite: 442]
-        <div class="w-container"> [cite: 442]
-            <div class="section-title-group"> [cite: 442]
-                <h2 class="section-heading centered white">Clinical disclosure</h2> [cite: 442]
-                <div class="section-subheading center off-white">Below is my clinical disclosure agreement link to include:</div> [cite: 442]
+    <div class="section-custom accent-bg">
+        <div class="custom-container">
+            <div class="section-title-group-custom">
+                <h2 class="section-heading-custom">Clinical Disclosure</h2>
+                <div class="section-subheading-custom off-white-text">Below is my clinical disclosure agreement link to include topics such as:</div>
             </div>
-            <div class="w-row"> [cite: 442]
-                <div class="w-col w-col-6"> [cite: 442]
-                    <div class="text-block">
-                        Informed Consent for Counseling Services <br />
-                        Benefits &amp;&nbsp;Risks<br />
-                        Course of Treatment <br />
-                        Termination and Closure<br />
-                        Counselor Absence <br /> [cite: 443]
-                        Communication &amp; &nbsp; Social Media <br /> [cite: 443]
-                        Confidentiality <br /> [cite: 443]
-                        Litigation <br /> [cite: 443]
-                        Virtual Sessions [cite: 443]
-                    </div>
+            <div class="custom-grid-row">
+                <div class="custom-grid-col-half">
+                    <ul class="text-block-custom custom-disclosure-list"> {/* Added a new class for specific list styling */}
+                        <li>Informed Consent for Counseling Services</li>
+                        <li>Benefits &amp; Risks</li>
+                        <li>Course of Treatment</li>
+                        <li>Termination and Closure</li>
+                        <li>Counselor Absence</li>
+                        <li>Communication &amp; Social Media</li>
+                        <li>Confidentiality</li>
+                        <li>Litigation</li>
+                        <li>Virtual Sessions</li>
+                    </ul>
                 </div>
-                <div class="w-col w-col-6"> [cite: 443]
-                    <div class="text-block-2">
-                        Client's Responsibilities <br />
-                        Client's Rights <br />
-                        Accountability <br />
-                        Crisis Information <br />
-                        Billing Information <br />
-                        Cancellation Policy [cite: 443]
-                    </div>
+                <div class="custom-grid-col-half">
+                    <ul class="text-block-custom custom-disclosure-list"> {/* Added a new class for specific list styling */}
+                        <li>Client's Responsibilities</li>
+                        <li>Client's Rights</li>
+                        <li>Accountability</li>
+                        <li>Crisis Information</li>
+                        <li>Billing Information</li>
+                        <li>Cancellation Policy</li>
+                    </ul>
                 </div>
             </div>
-            <a href="https://drive.google.com/file/d/162n1Orvh4BxnGQNWmvyQSkS38IPvz3Ji/view?usp=sharing" target="_blank" class="button-3 w-button">Clinical Disclosure</a> [cite: 443]
+            <a href="https://drive.google.com/file/d/162n1Orvh4BxnGQNWmvyQSkS38IPvz3Ji/view?usp=sharing" target="_blank" class="button-custom">View Full Clinical Disclosure</a>
         </div>
     </div>
-
-    <div class="footer wf-section">
-        <div class="w-container">
-            <div class="w-row">
-                <div class="spc w-col w-col-4"></div>
-                <div class="spc w-col w-col-4">
-                    <h5 class="heading-3">useful links</h5>
-                    <a href="https://www.crisisconnections.org/24-hour-crisis-line/" target="_blank" class="footer-link">Crisis Information</a>
+    <footer class="footer-custom">
+        <div class="custom-container">
+            <div class="footer-grid-row">
+                <div class="footer-grid-col">
                 </div>
-                <div class="w-col w-col-4">
-                    <h5 class="heading-2">Contact me</h5>
-                    <div class="footer-link-wrapper w-clearfix">
-                        <img src="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/62ea00a21bd1f52bdb773306_social-06.svg" width="20" alt="" class="info-icon" />
-                        <a href="mailto:madeline.schmitt@mhcdt.com" class="footer-link with-icon">Email Address</a> [cite: 445]
+                <div class="footer-grid-col">
+                    <h3 class="footer-heading-custom">Useful Links</h3>
+                    <a href="https://www.crisisconnections.org/24-hour-crisis-line/" target="_blank" class="footer-link-custom">Crisis Information</a>
+                </div>
+                <div class="footer-grid-col">
+                    <h3 class="footer-heading-custom">Contact Me</h3>
+                    <div class="footer-link-wrapper-custom">
+                        <img src="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/62ea00a21bd1f52bdb773306_social-06.svg" width="20" alt="Email icon" class="info-icon-custom" />
+                        <a href="mailto:madeline.schmitt@mhcdt.com" class="footer-link-custom with-icon-custom">Email Address</a>
                     </div>
-                    <div class="footer-link-wrapper w-clearfix"><img src="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/62ea00a21bd1f53b717732eb_social-12.svg" width="20" alt="" class="info-icon" /></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer center wf-section">
-        <div class="w-container">
-            <div class="footer-text">Copyright Madeline Schmitt all rights reserved.</div>
+    </footer>
+    <div class="footer-custom center-bg">
+        <div class="custom-container">
+            <div class="footer-text-custom">Copyright Madeline Schmitt all rights reserved.</div>
         </div>
     </div>
-    <script src="./Madeline Schmitt Counseling &amp; Drama Therapy PLLC_files/jquery-3.5.1.min.dc5e7f18c8.js.download" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    </a>
 </body>
 </html>
