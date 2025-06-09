@@ -1,0 +1,6 @@
+# Locally built site content
+**/_site
+
+# Ruby gemfiles
+Gemfile
+Gemfile.lock
