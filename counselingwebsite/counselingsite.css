@@ -386,7 +386,7 @@ p.paragraph-3-custom {
   margin-top: 20px;
 }
 .button-custom:hover {
-  background-color: #2e9dff;
+  background-color: #e2a62b;
   color: #ffffff;
 }
 
@@ -429,7 +429,7 @@ p.paragraph-3-custom {
   transition: color 0.3s ease;
 }
 .footer-link-custom:hover {
-  color: #2e9dff;
+  color: #e2a62b;
 }
 .footer-link-wrapper-custom {
   display: flex;
@@ -560,9 +560,9 @@ textarea:focus-visible,
 input[type="text"]:focus-visible,
 input[type="email"]:focus-visible,
 input[type="search"]:focus-visible {
-  outline: 3px solid #2e9dff;
+  outline: 3px solid #e2a62b;
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(46, 157, 255, 0.4);
+  box-shadow: 0 0 0 3px rgba(152, 122, 0, 0.4);
 }
 
 @media screen and (max-width: 991px) {
@@ -664,7 +664,7 @@ input[type="search"]:focus-visible {
 .accordion-button:hover,
 .accordion-button.active {
     background-color: #2a2a2a;
-    color: #2e9dff;
+    color: #e2a62b;
 }
 
 .accordion-button::after {
@@ -678,7 +678,7 @@ input[type="search"]:focus-visible {
 
 .accordion-button.active::after {
     content: "\2212";
-    color: #2e9dff;
+    color: #e2a62b;
     transform: rotate(180deg);
 }
 
@@ -699,7 +699,7 @@ input[type="search"]:focus-visible {
     margin-bottom: 15px;
 }
 .panel .footer-link-custom {
-    color: #2e9dff;
+    color: #e2a62b;
     border-bottom: 1px solid #444444;
     padding-bottom: 5px;
     margin-top: 10px;
